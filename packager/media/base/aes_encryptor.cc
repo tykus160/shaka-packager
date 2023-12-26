@@ -220,10 +220,9 @@ void AesCbcEncryptor::CbcEncryptBlocks(const uint8_t* plaintext,
   CHECK_EQ(plaintext_size % AES_BLOCK_SIZE, 0u);
 
   size_t output_size = 0;
-  CHECK_EQ(
-      mbedtls_cipher_crypt(&cipher_ctx_, iv, AES_BLOCK_SIZE,
-                           plaintext, plaintext_size, ciphertext, &output_size),
-      0);
+  CHECK_EQ(mbedtls_cipher_crypt(&cipher_ctx_, iv, AES_BLOCK_SIZE, plaintext,
+                                plaintext_size, ciphertext, &output_size),
+           0);
 
   CHECK_EQ(output_size % AES_BLOCK_SIZE, 0u);
   CHECK_GT(output_size, 0u);
