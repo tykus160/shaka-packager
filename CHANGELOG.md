@@ -1,6 +1,14 @@
 # Changelog
 
 
+## [3.2.1](https://github.com/shaka-project/shaka-packager/compare/v3.2.0...v3.2.1) (2024-08-29)
+
+
+### Bug Fixes
+
+* Add Missing Dash Roles to RoleFromString function ([#1418](https://github.com/shaka-project/shaka-packager/issues/1418)) ([#1419](https://github.com/shaka-project/shaka-packager/issues/1419)) ([9cb00e9](https://github.com/shaka-project/shaka-packager/commit/9cb00e91ab0d081b1f2132abaad7c23ef15047b7))
+* Break header installation for the shared library ([#1407](https://github.com/shaka-project/shaka-packager/issues/1407)) ([b5c2cb8](https://github.com/shaka-project/shaka-packager/commit/b5c2cb8b73701911f765a149dd37521026e7ed2a)), closes [#1406](https://github.com/shaka-project/shaka-packager/issues/1406)
+
 ## [3.2.0](https://github.com/shaka-project/shaka-packager/compare/v3.1.0...v3.2.0) (2024-05-11)
 
 
